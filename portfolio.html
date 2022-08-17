@@ -15,36 +15,36 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header-box container">
+      <div class="header__container">
         <nav class="header-nav">
-          <a class="header-logo link" href="./index.html" lang="en"
-            ><span class="logo-text">Web</span>Studio</a
+          <a class="logo" href="./index.html" lang="en"
+            ><span class="logo__text">Web</span>Studio</a
           >
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a class="nav-link link" href="./index.html">Студія</a>
+
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="./index.html">Студія</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link current link" href="./portfolio.html">Портфоліо</a>
-            </li>
-            <li class="nav-item"><a class="nav-link link" href="#">Контакти</a></li>
+            <li class="nav-list__item"><a class="nav-list__link nav-list__link--current" href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav-list__item"><a class="nav-list__link" href="#">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="header-list list">
-          <li class="header-item">
-            <a class="header-link link" href="mailto:info@devstudio.com">
-              <svg class="header-icon" width="16" height="12">
+
+        <ul class="connect-list">
+          <li class="connect-list__item">
+            <a class="connect-list__link" href="mailto:info@devstudio.com">
+              <svg class="connect-list__icon" width="16" height="12">
                 <use href="./images/icons_sprite.svg#mail"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="header-item">
-            <a class="header-link link" href="tel:+380961111111"
-              ><svg class="header-icon" width="10" height="16">
+          <li class="connect-list__item">
+            <a class="connect-list__link" href="tel:+380961111111"
+              ><svg class="connect-list__icon" width="10" height="16">
                 <use href="./images/icons_sprite.svg#phone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -54,203 +54,203 @@
     </header>
 
     <main>
-      <section class="portfolio section">
-        <div class="container">
-          <h2 class="visually-hidden">Портфоліо</h2>
-          <ul class="portfolio-btn-list list">
-            <li class="btn-item">
-              <button class="portfolio-btn current-btn" type="button">Все</button>
+      <section class="portfolio">
+        <div class="portfolio__container">
+          <h2 class="portfolio__title">Портфоліо</h2>
+          <ul class="btn-list">
+            <li class="btn-list__item">
+              <button class="btn btn-list__btn btn-list__btn--current" type="button">Усі</button>
             </li>
-            <li class="btn-item"><button class="portfolio-btn" type="button">Веб-сайти</button></li>
-            <li class="btn-item">
-              <button class="portfolio-btn" type="button">Додатки</button>
+            <li class="btn-list__item"><button class="btn btn-list__btn" type="button">Веб-сайти</button></li>
+            <li class="btn-list__item">
+              <button class="btn btn-list__btn" type="button">Додатки</button>
             </li>
-            <li class="btn-item"><button class="portfolio-btn" type="button">Дизайн</button></li>
-            <li class="btn-item"><button class="portfolio-btn" type="button">Маркетинг</button></li>
+            <li class="btn-list__item"><button class="btn btn-list__btn" type="button">Дизайн</button></li>
+            <li class="btn-list__item"><button class="btn btn-list__btn" type="button">Маркетинг</button></li>
           </ul>
 
-          <ul class="portfolio-card-list list">
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="">
-                <div class="portfolio-thumb">
+          <ul class="card-list">
+            <li class="card-list__item">
+              <a class="card-list__link" href="">
+                <div class="card-list__thumb">
                   <img
-                    class="portfolio-img"
+                    class="card-list__img"
                     src="./images/project1.jpg"
                     alt="Веб-сайт Технокряк"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-action">
+                  <p class="card-list__action">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                     приватну особу.
                   </p>
                 </div>
-                <div class="portfolio-wrap">
-                  <h3 class="portfolio-title">Технокряк</h3>
-                  <p class="portfolio-text">Веб-сайт</p>
+                <div class="card-list__wrap">
+                  <h3 class="card-list__title">Технокряк</h3>
+                  <p class="card-list__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="">
-                <div class="portfolio-thumb">
+            <li class="card-list__item">
+              <a class="card-list__link" href="">
+                <div class="card-list__thumb">
                   <img
-                    class="portfolio-img"
+                    class="card-list__img"
                     src="./images/project2.jpg"
                     alt="Постер New Orlean vs Golden Star"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-action">
+                  <p class="card-list__action">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, assumenda.
                   </p>
                 </div>
-                <div class="portfolio-wrap">
-                  <h3 class="portfolio-title">
+                <div class="card-list__wrap">
+                  <h3 class="card-list__title">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h3>
-                  <p class="portfolio-text">Дизайн</p>
+                  <p class="card-list__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="">
-                <div class="portfolio-thumb">
+            <li class="card-list__item">
+              <a class="card-list__link" href="">
+                <div class="card-list__thumb">
                   <img
-                    class="portfolio-img"
+                    class="card-list__img"
                     src="./images/project3.jpg"
                     alt="Додаток ресторану Seafood"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-action">
+                  <p class="card-list__action">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, assumenda.
                   </p>
                 </div>
-                <div class="portfolio-wrap">
-                  <h3 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h3>
-                  <p class="portfolio-text">Додаток</p>
+                <div class="card-list__wrap">
+                  <h3 class="card-list__title">Ресторан <span lang="en">Seafood</span></h3>
+                  <p class="card-list__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="">
-                <div class="portfolio-thumb">
+            <li class="card-list__item">
+              <a class="card-list__link" href="">
+                <div class="card-list__thumb">
                   <img
-                    class="portfolio-img"
+                    class="card-list__img"
                     src="./images/project4.jpg"
                     alt="Проєкт Prime"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-action">
+                  <p class="card-list__action">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, assumenda.
                   </p>
                 </div>
-                <div class="portfolio-wrap">
-                  <h3 class="portfolio-title">Проєкт <span lang="en">Prime</span></h3>
-                  <p class="portfolio-text">Маркетинг</p>
+                <div class="card-list__wrap">
+                  <h3 class="card-list__title">Проєкт <span lang="en">Prime</span></h3>
+                  <p class="card-list__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="">
-                <div class="portfolio-thumb">
+            <li class="card-list__item">
+              <a class="card-list__link" href="">
+                <div class="card-list__thumb">
                   <img
-                    class="portfolio-img"
+                    class="card-list__img"
                     src="./images/project5.jpg"
                     alt="Проєкт Boxes"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-action">
+                  <p class="card-list__action">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, assumenda.
                   </p>
                 </div>
-                <div class="portfolio-wrap">
-                  <h3 class="portfolio-title">Проєкт <span lang="en">Boxes</span></h3>
-                  <p class="portfolio-text">Додаток</p>
+                <div class="card-list__wrap">
+                  <h3 class="card-list__title">Проєкт <span lang="en">Boxes</span></h3>
+                  <p class="card-list__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="">
-                <div class="portfolio-thumb">
+            <li class="card-list__item">
+              <a class="card-list__link" href="">
+                <div class="card-list__thumb">
                   <img
-                    class="portfolio-img"
+                    class="card-list__img"
                     src="./images/project6.jpg"
                     alt="Веб-сайт Inspiration has no Borders"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-action">
+                  <p class="card-list__action">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, assumenda.
                   </p>
                 </div>
-                <div class="portfolio-wrap">
-                  <h3 class="portfolio-title" lang="en">Inspiration has no Borders</h3>
-                  <p class="portfolio-text">Веб-сайт</p>
+                <div class="card-list__wrap">
+                  <h3 class="card-list__title" lang="en">Inspiration has no Borders</h3>
+                  <p class="card-list__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="">
-                <div class="portfolio-thumb">
+            <li class="card-list__item">
+              <a class="card-list__link" href="">
+                <div class="card-list__thumb">
                   <img
-                    class="portfolio-img"
+                    class="card-list__img"
                     src="./images/project7.jpg"
                     alt="Видання Limited Edition"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-action">
+                  <p class="card-list__action">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, assumenda.
                   </p>
                 </div>
-                <div class="portfolio-wrap">
-                  <h3 class="portfolio-title">Видання <span lang="en">Limited Edition</span></h3>
-                  <p class="portfolio-text">Дизайн</p>
+                <div class="card-list__wrap">
+                  <h3 class="card-list__title">Видання <span lang="en">Limited Edition</span></h3>
+                  <p class="card-list__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="">
-                <div class="portfolio-thumb">
+            <li class="card-list__item">
+              <a class="card-list__link" href="">
+                <div class="card-list__thumb">
                   <img
-                    class="portfolio-img"
+                    class="card-list__img"
                     src="./images/project8.jpg"
                     alt="Проєкт LAB"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-action">
+                  <p class="card-list__action">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, assumenda.
                   </p>
                 </div>
-                <div class="portfolio-wrap">
-                  <h3 class="portfolio-title">Проєкт <span lang="en">LAB</span></h3>
-                  <p class="portfolio-text">Маркетинг</p>
+                <div class="card-list__wrap">
+                  <h3 class="card-list__title">Проєкт <span lang="en">LAB</span></h3>
+                  <p class="card-list__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
-              <a class="portfolio-link link" href="">
-                <div class="portfolio-thumb">
+            <li class="card-list__item">
+              <a class="card-list__link" href="">
+                <div class="card-list__thumb">
                   <img
-                    class="portfolio-img"
+                    class="card-list__img"
                     src="./images/project9.jpg"
                     alt="Додаток Growing Business"
                     width="370"
                     height="294"
                   />
-                  <p class="portfolio-action">
+                  <p class="card-list__action">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, assumenda.
                   </p>
                 </div>
-                <div class="portfolio-wrap">
-                  <h3 class="portfolio-title" lang="en">Growing Business</h3>
-                  <p class="portfolio-text">Додаток</p>
+                <div class="card-list__wrap">
+                  <h3 class="card-list__title" lang="en">Growing Business</h3>
+                  <p class="card-list__text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -260,95 +260,95 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <div class="footer-box-info">
-          <a class="footer-logo link" href="./index.html" lang="en"
-            ><span class="logo-text">Web</span>Studio</a
+      <div class="footer__container">
+        <div class="info-box">
+          <a class="logo logo--white" href="./index.html" lang="en"
+            ><span class="logo__text">Web</span>Studio</a
           >
           <address class="address">
-            <ul class="address-list list">
-              <li class="address-item">
+            <ul class="address-list">
+              <li class="address-list__item">
                 <a
-                  class="address-link link"
+                  class="address-list__link address-list__link--white"
                   href="https://goo.gl/maps/3rtRQ8NqnFvh8g3G8"
                   target="_blank"
                   rel="noopener nofollow noreferrer"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="address-item">
-                <a class="footer-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="address-list__item">
+                <a class="address-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li class="address-item">
-                <a class="footer-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="address-list__item">
+                <a class="address-list__link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-box-soc">
-          <b class="footer-text">Приєднуйтесь</b>
-          <ul class="footer-soc-list list">
-            <li class="footer-soc-item">
+        <div class="soc-box">
+          <b class="soc-box__text">Приєднуйтесь</b>
+          <ul class="soc-list">
+            <li class="soc-list__item">
               <a
                 href="https://www.instagram.com/"
-                class="footer-soc-link link"
+                class="soc-list__link soc-list__link--dark"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
                 aria-label="Instagram"
               >
-                <svg class="footer-icon" width="20" height="20">
+                <svg class="soc-list__icon" width="20" height="20">
                   <use href="./images/icons_sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-soc-item">
+            <li class="soc-list__item">
               <a
                 href="https://twitter.com/"
-                class="footer-soc-link link"
+                class="soc-list__link soc-list__link--dark"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
                 aria-label="Twitter"
               >
-                <svg class="footer-icon" width="20" height="20">
+                <svg class="soc-list__icon" width="20" height="20">
                   <use href="./images/icons_sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-soc-item">
+            <li class="soc-list__item">
               <a
                 href="https://www.facebook.com/"
-                class="footer-soc-link link"
+                class="soc-list__link soc-list__link--dark"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
                 aria-label="Facebook"
               >
-                <svg class="footer-icon" width="20" height="20">
+                <svg class="soc-list__icon" width="20" height="20">
                   <use href="./images/icons_sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-soc-item">
+            <li class="soc-list__item">
               <a
                 href="https://ua.linkedin.com/"
-                class="footer-soc-link link"
+                class="soc-list__link soc-list__link--dark"
                 target="_blank"
                 rel="noopener nofollow noreferrer"
                 aria-label="Linkedin"
               >
-                <svg class="footer-icon" width="20" height="20">
+                <svg class="soc-list__icon" width="20" height="20">
                   <use href="./images/icons_sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-box-form">
-          <b class="footer-text">Підпишіться на розсилку</b>
-          <form class="footer-form" name="subscription-form">
-            <input class="footer-input" type="email" name="email" placeholder="E-mail" />
-            <button class="footer-btn" type="submit">
-              <span>Підписатися</span>
-              <svg class="" width="24" height="24">
+        <div class="form-box">
+          <b class="form-box__text">Підпишіться на розсилку</b>
+          <form class="form" name="subscription-form">
+            <input class="form__input" type="email" name="email" placeholder="E-mail" />
+            <button class="btn form__btn" type="submit">
+              <span class="btn__text">Підписатися</span>
+              <svg class="form-icon" width="24" height="24">
                 <use href="./images/icons_sprite.svg#send"></use>
               </svg>
             </button>
